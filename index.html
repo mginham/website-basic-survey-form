@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Let us know how we can improve!</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Tell us a little about yourself</legend>
+        <label id="name-label" for="name">Name
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label" for="email">Email
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </label>
+        <label id="number-label" for="number">Age (optional)
+          <input id="number" type="number" min="0" max="120" placeholder="Age" />
+        </label>
+        <label id="dropdown-label for="dropdown">Occupation
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Full-time Worker</option>
+            <option value="3">Part-time Worker</option>
+            <option value="4">Other</option>
+            <option value="5">Prefer not to say</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend my services to others?</legend>
+        <label for="yes-recc"><input id="yes-recc" type="radio" name="recc-preference" value="yes" class="inline" /> Yes</label>
+        <label for="no-recc"><input id="no-recc" type="radio" name="recc-preference" value="no" class="inline" /> No</label>
+      </fieldset>
+      <fieldset>
+        <legend>What did you like about our services?</legend>
+        <label for="videos"><input id="videos" type="checkbox" value="videos" class="inline" /> Videos</label>
+        <label for="meetups"><input id="meetups" type="checkbox" value="meetups" class="inline" /> Meetups</label>
+        <label for="q&as"><input id="q&as" type="checkbox" value="q&as"class="inline" /> Q&As</label>
+      </fieldset>
+      <label for="additional-comments">Do you have any additional comments?
+        <textarea id="additional-comments" rows="3" cols="30" placeholder="Add your comments here"></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
